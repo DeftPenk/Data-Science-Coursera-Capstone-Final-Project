@@ -1,4 +1,4 @@
-# Data Science Coursera Capstone Final Project Submission
+# Coursera Data Science Capstone Final Project Submission
 
 
 Link on <a href="http://rpubs.com/parimi/409637" target="_blank">RPubs</a>
@@ -10,7 +10,7 @@ The goal of this exercise is to create a product to highlight the prediction alg
 1. A Shiny app that takes as input a phrase (multiple words) in a text box input and outputs a prediction of the next word.
 2. A slide deck consisting of no more than 5 slides created with R Studio Presenter (https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations) pitching your algorithm and app as if you were presenting to your boss or an investor.
 
-#### Review Criteria
+### Review Criteria
 
 **Data Product**
 
