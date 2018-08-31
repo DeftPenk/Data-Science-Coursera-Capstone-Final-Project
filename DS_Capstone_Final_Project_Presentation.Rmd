@@ -1,0 +1,45 @@
+---
+title: "Coursera's Data Science Capstone Final Project (Next Word Predictor)"
+author: "Sreenivasulu Parimi"
+date: "August 28, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+https://github.com/anzy9/Coursera-Data-Science-Capstone-Final-Project
+https://rpubs.com/justusfrantz/capstone
+https://rstudio-pubs-static.s3.amazonaws.com/295541_34232d761aeb4e17b7716b67445450bf.html#/
+https://rpubs.com/yuyi213/237361
+https://rpubs.com/nierhoff/cdsc
+https://github.com/mhnierhoff/CapstoneCoursera
+http://rstudio-pubs-static.s3.amazonaws.com/239066_d9860715c4b0493cb5412bd26c24ba82.html#/
+https://rstudio-pubs-static.s3.amazonaws.com/238817_594713cde25c47f1aaf7f61c7a82b0c7.html#/
+https://rstudio-pubs-static.s3.amazonaws.com/236022_dd12fc856c6441c7afeb33067fd656c6.html#/
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
