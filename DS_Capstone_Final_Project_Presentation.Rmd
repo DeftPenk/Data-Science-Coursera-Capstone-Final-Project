@@ -1,7 +1,7 @@
 ---
-title: "Coursera's Data Science Capstone Final Project (Next Word Predictor)"
+title: "Coursera's Data Science Capstone Final Project: Next Word Predictor"
 author: "Sreenivasulu Parimi"
-date: "August 28, 2018"
+date: "September 4, 2018"
 output: ioslides_presentation
 ---
 
@@ -9,37 +9,40 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## R Markdown
+## Overview of the Project
 
-https://github.com/anzy9/Coursera-Data-Science-Capstone-Final-Project
-https://rpubs.com/justusfrantz/capstone
-https://rstudio-pubs-static.s3.amazonaws.com/295541_34232d761aeb4e17b7716b67445450bf.html#/
-https://rpubs.com/yuyi213/237361
-https://rpubs.com/nierhoff/cdsc
-https://github.com/mhnierhoff/CapstoneCoursera
-http://rstudio-pubs-static.s3.amazonaws.com/239066_d9860715c4b0493cb5412bd26c24ba82.html#/
-https://rstudio-pubs-static.s3.amazonaws.com/238817_594713cde25c47f1aaf7f61c7a82b0c7.html#/
-https://rstudio-pubs-static.s3.amazonaws.com/236022_dd12fc856c6441c7afeb33067fd656c6.html#/
+The purpose of the project is to create text-prediction application with R Shiny package that predicts words using a natural language processing model i.e. creating an application based on a predictive model for text.
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Given a word or phrase as input, the application will try to predict the next word, similar to the way most smart phone keyboards are implemented today using the technology of *Swiftkey*.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+The predictive model will be trained using a corpus, a collection of written texts, called the **HC Corpora** which has been filtered by language.
 
-## Slide with Bullets
+## Overview of the Prediction Model
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+The prediction model uses the principles of **tidy data** applied to text mining in R. The following Key steps are involved in the prediction model.
 
-## Slide with R Output
+* As an input, it takes raw text files for model training
+* Clean the raw data; separate into 2, 3, 4, 5, and 6 word n grams and save as tibbles
+* Sort the n grams tibbles by frequency and save the data as *.rds* files
+* N grams function uses a **back-off** type prediction model
+      - User supplies an input phrase
+      - Model uses last 5, 4, 3, 2, or 1 words to predict the best 6th, 5th, 4th, 3rd, or 2nd   match in the data
+* As an output, it predicts next word
 
-```{r cars, echo = TRUE}
-summary(cars)
-```
+## Next Word Predictor App
 
-## Slide with Plot
+**Overview:** The Next Word Predictor app provides a simple user interface to the next word prediction model. The app takes as input a phrase (multiple words) in a text box input and outputs a prediction of the next word.
 
-```{r pressure}
-plot(pressure)
-```
+The below image describes how the app functions and its instructions.
 
+<img src="C:/Users/<name>/Coursera/Data-Science-Coursera-Capstone-Final-Project/wordPredictorApp/NextWordPredictorApp.png"; style="max-width:1085px;float:bottom;">
+
+## Reference
+
+[Tidy Data](http://vita.had.co.nz/papers/tidy-data.html)
+
+[Text Mining with R: A Tidy Approach](http://tidytextmining.com/index.html)
+
+[Next Word Predictor App](https://github.com/sreenivasulu-parimi/Data-Science-Coursera-Capstone-Final-Project/tree/master/wordPredictorApp)
+
+[Next Word Predictor App Source Code](https://github.com/sreenivasulu-parimi/Data-Science-Coursera-Capstone-Final-Project/tree/master/wordPredictorApp)
