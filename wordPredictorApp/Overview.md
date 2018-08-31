@@ -1,17 +1,23 @@
-This application is developed as part of the **Coursera's Data Science Capstone: Final Project**. In this capstone, we will be applying data science in the area of natural language processing. The project is sponsored by SwiftKey.
+## Overview of the Project
 
-The purpose of the project is to create text-prediction application with R Shiny package that predicts words using a natural language processing model i.e. creating an application based on a predictive model for text. Given a word or phrase as input, the application will try to predict the next word, similar to the way most smart phone keyboards are implemented today using the technology of Swiftkey. The predictive model will be trained using a corpus, a collection of written texts, called the HC Corpora which has been filtered by language.
+The purpose of the project is to create text-prediction application with R Shiny package that predicts words using a natural language processing model i.e. creating an application based on a predictive model for text.
 
-### Steps
-1. Upon initial load up of the application, **"NULL"** will be displayed at the Predicted Next Word textbox.
-2. User may then enter a partially complete sentence to begin the next word prediction.
+Given a word or phrase as input, the application will try to predict the next word, similar to the way most smart phone keyboards are implemented today using the technology of *Swiftkey*.
 
+The predictive model will be trained using a corpus, a collection of written texts, called the **HC Corpora** which has been filtered by language.
 
-### Results
-1. Next word predicted is shown at the Predicted Next Word textbox.
-2. Information on the n-gram backoff algorithm used to predict is shown as indication.
+## Overview of the Prediction Model
 
-#### Note:
-The source codes for ui.R and server.R files are also available on the [GitHub repo](https://github.com/badal2017/Capstone)
+The prediction model uses the principles of **tidy data** applied to text mining in R. The following Key steps are involved in the prediction model.
 
-Presentation Slide decks are available on the [RPubs page](https://rpubs.com/badalchowdhury/capstone)
+* As an input, it takes raw text files for model training
+* Clean the raw data; separate into 2, 3, 4, 5, and 6 word n grams and save as tibbles
+* Sort the n grams tibbles by frequency and save the data as *.rds* files
+* N grams function uses a **back-off** type prediction model
+      - User supplies an input phrase
+      - Model uses last 5, 4, 3, 2, or 1 words to predict the best 6th, 5th, 4th, 3rd, or 2nd   match in the data
+* As an output, it predicts next word
+
+## Next Word Predictor App
+
+**Overview:** The Next Word Predictor app provides a simple user interface to the next word prediction model. The app takes as input a phrase (multiple words) in a text box input and outputs a prediction of the next word.

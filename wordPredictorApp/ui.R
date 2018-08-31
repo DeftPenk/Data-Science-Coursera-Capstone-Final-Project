@@ -36,11 +36,13 @@ shinyUI(navbarPage("Coursera's Data Science Capstone: Final Project",
                    tabPanel("Overview",
                             mainPanel(
                                   img(src = "./headers.png"),
-                                  includeMarkdown("Overview.md")
+                                  includeMarkdown("Overview.md"),
+                                  img(src = "./NextWordPredictorApp.png")
                             )
                    ),
                    tabPanel("Instructions",
                             mainPanel(
+                                  img(src = "./headers.png"),
                                   includeMarkdown("README.md")
                             )
                    )
