@@ -43,7 +43,7 @@ shinyUI(navbarPage("Coursera's Data Science Capstone: Final Project",
                    tabPanel("Instructions",
                             mainPanel(
                                   img(src = "./headers.png"),
-                                  includeMarkdown("README.md")
+                                  includeMarkdown("Instructions.md")
                             )
                    )
 )

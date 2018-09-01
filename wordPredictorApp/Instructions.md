@@ -1,7 +1,4 @@
-# Coursera Data Science Capstone Final Project Submission
-
-
-Link on <a href="http://rpubs.com/parimi/409637" target="_blank">RPubs</a>
+# Coursera's Data Science Capstone Final Project Submission
 
 ## Instructions
 
