@@ -44,5 +44,3 @@ The below image describes how the app functions and its instructions.
 [Text Mining with R: A Tidy Approach](http://tidytextmining.com/index.html)
 
 [Next Word Predictor App](https://sreenivasulu-parimi.shinyapps.io/nextWordPredictorApp/)
-
-[Next Word Predictor App Source Code](https://github.com/sreenivasulu-parimi/Data-Science-Coursera-Capstone-Final-Project/tree/master/wordPredictorApp)
